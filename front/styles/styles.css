@@ -1,0 +1,324 @@
+header {
+  position: fixed;
+  background-color: black;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+    font-family: "Abel", sans-serif;
+    background-color: black;
+    color:whitesmoke;
+    margin-top: 110px;
+    width: 100%;
+    height: 100%;
+  }
+h1{
+    background-color: black;
+    display: center;
+    text-align: center;
+    justify-content: center;   
+    align-items: center;
+    margin:10px auto;
+    font-size:3em;    
+}
+
+h2{
+  background-color: black;
+  display: center;
+  text-align: center;
+  justify-content: center;   
+  align-items: center;
+  margin:10px auto;
+  font-size:2em;    
+}
+
+h3 {
+  background-color: black;
+  display: center;
+  text-align: center;
+  margin:0px auto;
+  font-size:2em;
+  padding:20px;   
+}
+
+h4 {
+  background-color: black;
+  display: center;
+  text-align: center;
+  margin:0px auto;
+  font-size:1em;   
+  color:whitesmoke;
+  padding: 10px;
+}
+
+a{
+  color:whitesmoke;
+}
+
+nav{
+  margin-top: 10px;
+  width: 100%;
+  padding: 1em;
+  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;       
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  margin-right: 10px;
+  margin-left: 10px;
+  color:whitesmoke;
+  padding:20px;
+  border-radius: 5px;
+}
+
+li:hover, a:hover, a:hover h4{
+  color:rgb(70, 191, 247);
+}
+#image-container{
+  width: 100%;
+  
+}
+
+#image-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  gap: 1em; 
+   
+}
+#image-container {
+  margin: auto;
+  width: min(100%, 1000px); 
+
+}
+
+
+.card:hover, h4:hover{
+  background-color: rgba(1, 34, 71, 0.534);
+}
+
+main{
+  padding: 20px;
+}
+
+footer{
+  font-size: medium;
+  text-align: center;
+  position:fixed;
+  bottom: 0;
+  width:100%;
+  padding: 5px;
+  background-color: black;
+}
+
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+.centered-image {
+  display: flex;
+}
+
+img {
+  /* max-width: 100%; */
+  padding: 10px;
+  display: block;
+  width: 18rem;
+  height: 25rem;
+  margin:auto;
+
+}
+
+/* 
+Esta forma también sirve
+
+p {
+  text-align: justify;
+  width: 90%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+ */
+
+
+
+ p {
+
+  width: 50%; 
+  margin: 0 auto;
+  line-height: 1.6; 
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.story {
+  text-align: justify;
+  text-justify: inter-word;
+  width: 80%;
+
+}
+
+
+#whiteCollar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  padding-bottom: 35px;
+  height: auto;
+}
+
+
+
+/* Medium screens (between 768px and 992px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body{
+      font-size: medium;
+  }
+
+  
+  header {
+      padding: 10px 0px 10px 0px;
+  }
+  
+  main {
+      padding: 100px;
+  }
+  
+  ul {
+      flex-wrap: wrap;
+  }
+  
+  li {
+      width: calc(33% - 10px);
+  }
+  
+  h1, h2, p {
+      font-size: medium;
+  }
+  
+  section{
+    padding: 50px 0px 10px 0px;
+
+  }
+
+  img {
+      width: 4rem;
+      display: block;
+      margin: 0 auto;      
+  }
+
+}
+
+
+/* Small screens (less than 768px) */
+@media only screen and (max-width: 767px) {
+  body{
+      font-size: small;
+
+  }
+  header {
+      padding: 5px 0px 5px 0px;
+  }
+  
+  main {
+      padding: 50px;
+  }
+  
+  ul {
+      flex-wrap: wrap;
+  }
+  
+  li {
+      width: calc(33% - 10px);
+  }
+  
+  h1, h2, p {
+      font-size: small;
+      
+  }
+
+  section{
+    padding: 50px 0px 10px 0px;
+
+  }
+  
+  img {
+      width: 5rem;
+      display: block;
+      margin: 0 auto;
+  }
+}
+
+/* 
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: px;
+}
+
+nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor:pointer;        
+    margin: 5px;
+    font-size:larger;
+}
+
+li:hover, a:hover{
+  color: rgb(91, 135, 255);
+}
+
+main{
+  margin-top: 1em;
+  padding:10px;
+}
+
+
+
+
+.movies{
+  margin-bottom: 10px;
+}
+
+#image-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  gap: 1em; 
+}
+
+.movies{
+  padding: 100px 0 px 100px 0px;
+}
+
+#image-container {
+  margin: auto;
+  width: min(100%, 1000px); 
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+ */
